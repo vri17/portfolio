@@ -23,6 +23,71 @@
 
 </script>
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Photography</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+        
+        <div class="gallery-container">
+            <!-- 20 Image Boxes -->
+            <img src="/images /LALALALALALposters-10.png" class="gallery-item" onclick="openLightbox(this)">
+            <img src="images /Artboard 1.png" class="gallery-item" onclick="openLightbox(this)">
+            <img src="images/3.jpg" class="gallery-item" onclick="openLightbox(this)">
+            <img src="images/4.jpg" class="gallery-item" onclick="openLightbox(this)">
+            <img src="images/5.jpg" class="gallery-item" onclick="openLightbox(this)">
+            <img src="images/6.jpg" class="gallery-item" onclick="openLightbox(this)">
+            <img src="images/7.jpg" class="gallery-item" onclick="openLightbox(this)">
+            <img src="images/8.jpg" class="gallery-item" onclick="openLightbox(this)">
+            <img src="images/9.jpg" class="gallery-item" onclick="openLightbox(this)">
+            <img src="images/10.jpg" class="gallery-item" onclick="openLightbox(this)">
+            <img src="images/11.jpg" class="gallery-item" onclick="openLightbox(this)">
+            <img src="images/12.jpg" class="gallery-item" onclick="openLightbox(this)">
+            <img src="images/13.jpg" class="gallery-item" onclick="openLightbox(this)">
+            <img src="images/14.jpg" class="gallery-item" onclick="openLightbox(this)">
+            <img src="images/15.jpg" class="gallery-item" onclick="openLightbox(this)">
+            <img src="images/16.jpg" class="gallery-item" onclick="openLightbox(this)">
+            <img src="images/17.jpg" class="gallery-item" onclick="openLightbox(this)">
+            <img src="images/18.jpg" class="gallery-item" onclick="openLightbox(this)">
+            <img src="images/19.jpg" class="gallery-item" onclick="openLightbox(this)">
+            <img src="images/20.jpg" class="gallery-item" onclick="openLightbox(this)">
+        </div>
+
+        <div class="fade-bottom"></div> <!-- Bottom fade effect -->
+    </section>
+
+    <!-- Lightbox for Fullscreen Image -->
+    <div id="lightbox" class="lightbox">
+        <span class="close-btn" onclick="closeLightbox()">&times;</span>
+        <img id="lightbox-img" src="">
+    </div>
+
+    <!-- Common Footer -->
+    <footer class="site-footer">
+        <div class="footer-container">
+            <p>© 2025 Photography Portfolio. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        function openLightbox(img) {
+            document.getElementById("lightbox").style.display = "flex";
+            document.getElementById("lightbox-img").src = img.src;
+        }
+
+        function closeLightbox() {
+            document.getElementById("lightbox").style.display = "none";
+        }
+    </script>
+
+</body>
+</html>
+
+
 <footer class="site-footer">
     <div class="footer-container">
         <div class="footer-brand">
