@@ -99,12 +99,13 @@ header {
 
 /* About Section */
 .about {
-    display: flex;
+    display: 786px 1559px;
     align-items: center;
     justify-content: center;
-    padding: 100px 50px;
+    padding: 786px 1559px;
     background: white;
     color: black;
+        z-index: 1000;
 }
 
 .about-content {
@@ -161,3 +162,218 @@ header {
         width: 300px;
     }
 }
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+    scroll-behavior: smooth;
+}
+
+body {
+    background: black;
+    color: white;
+}
+
+/* Navigation */
+header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    padding: 20px 50px;
+    background: rgba(0, 0, 0, 0.8);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1000;
+}
+
+.logo {
+    font-size: 22px;
+    font-weight: bold;
+    color: white;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.nav-links li {
+    margin-left: 20px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    transition: 0.3s;
+}
+
+.nav-links a:hover,
+.nav-links a.active {
+    color: #00ff88;
+}
+
+/* Hero Section */
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100vh;
+    padding: 50px;
+    position: relative;
+}
+
+.text h1 {
+    font-size: 50px;
+    font-weight: bold;
+}
+
+.text p {
+    font-size: 22px;
+    margin-top: 10px;
+}
+
+.highlight {
+    color: #00ff88;
+    font-weight: bold;
+}
+
+.social-icons {
+    margin-top: 20px;
+}
+
+.social-icons img {
+    width: 30px;
+    margin-right: 10px;
+    transition: 0.3s;
+}
+
+.social-icons img:hover {
+    opacity: 0.7;
+}
+
+.profile-image img {
+    width: 450px;
+    height: auto;
+    border-radius: 10px;
+}
+
+/* About Section */
+.about {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 100px 50px;
+    background: white;
+    color: black;
+}
+
+.about-content {
+    display: flex;
+    max-width: 1000px;
+    align-items: center;
+}
+
+.about-image img {
+    width: 400px;
+    border-radius: 10px;
+}
+
+.about-text {
+    margin-left: 50px;
+    max-width: 500px;
+}
+
+.about-text h2 {
+    font-size: 48px;
+    font-weight: bold;
+    color: #222;
+}
+
+.about-text p {
+    font-size: 16px;
+    margin-top: 10px;
+    color: #555;
+    line-height: 1.6;
+}
+
+/* Services Section */
+.services {
+    padding: 100px 50px;
+    text-align: center;
+    background: black;
+}
+
+.section-title {
+    font-size: 48px;
+    font-weight: bold;
+    color: white;
+    margin-bottom: 30px;
+}
+
+.services-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.service-card {
+    background: #00ff88;
+    color: black;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 100px 40px;
+    border-radius: 10px;
+    text-decoration: none;
+    transition: 0.3s;
+    display: inline-block;
+    width: 200px;
+    text-align: center;
+}
+
+.service-card:hover,
+.service-card:active {
+    background: white;
+    color: black;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .hero {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .profile-image img {
+        width: 300px;
+    }
+
+    .about-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .about-text {
+        margin-left: 0;
+        margin-top: 20px;
+    }
+
+    .about-image img {
+        width: 300px;
+    }
+
+    .services-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .service-card {
+        width: 100%;
+        max-width: 250px;
+    }
+}
+

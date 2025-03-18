@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Photography Gallery</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Navigation -->
+    <header>
+        <nav>
+            <div class="logo">Personal</div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#photography" class="active">Photography</a></li>
+                <li><a href="#">Portfolio</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Photography Section -->
+    <section id="photography" class="gallery">
+        <h2 class="section-title">Photography</h2>
+        <div class="gallery-container">
+            <!-- 20 Image Boxes -->
+            <div class="gallery-item" onclick="openFullscreen('img1.jpg')"><img src="img1.jpg" alt="Gallery Image"></div>
+            <div class="gallery-item" onclick="openFullscreen('img2.jpg')"><img src="img2.jpg" alt="Gallery Image"></div>
+            <div class="gallery-item" onclick="openFullscreen('img3.jpg')"><img src="img3.jpg" alt="Gallery Image"></div>
+            <div class="gallery-item" onclick="openFullscreen('img4.jpg')"><img src="img4.jpg" alt="Gallery Image"></div>
+            <div class="gallery-item" onclick="openFullscreen('img5.jpg')"><img src="img5.jpg" alt="Gallery Image"></div>
+            <div class="gallery-item" onclick="openFullscreen('img6.jpg')"><img src="img6.jpg" alt="Gallery Image"></div>
+            <div class="gallery-item" onclick="openFullscreen('img7.jpg')"><img src="img7.jpg" alt="Gallery Image"></div>
+            <div class="gallery-item" onclick="openFullscreen('img8.jpg')"><img src="img8.jpg" alt="Gallery Image"></div>
+            <div class="gallery-item" onclick="openFullscreen('img9.jpg')"><img src="img9.jpg" alt="Gallery Image"></div>
+            <div class="gallery-item" onclick="openFullscreen('img10.jpg')"><img src="img10.jpg" alt="Gallery Image"></div>
+            <div class="gallery-item" onclick="openFullscreen('img11.jpg')"><img src="img11.jpg" alt="Gallery Image"></div>
+            <div class="gallery-item" onclick="openFullscreen('img12.jpg')"><img src="img12.jpg" alt="Gallery Image"></div>
+            <div class="gallery-item" onclick="openFullscreen('img13.jpg')"><img src="img13.jpg" alt="Gallery Image"></div>
+            <div class="gallery-item" onclick="openFullscreen('img14.jpg')"><img src="img14.jpg" alt="Gallery Image"></div>
+            <div class="gallery-item" onclick="openFullscreen('img15.jpg')"><img src="img15.jpg" alt="Gallery Image"></div>
+            <div class="gallery-item" onclick="openFullscreen('img16.jpg')"><img src="img16.jpg" alt="Gallery Image"></div>
+            <div class="gallery-item" onclick="openFullscreen('img17.jpg')"><img src="img17.jpg" alt="Gallery Image"></div>
+            <div class="gallery-item" onclick="openFullscreen('img18.jpg')"><img src="img18.jpg" alt="Gallery Image"></div>
+            <div class="gallery-item" onclick="openFullscreen('img19.jpg')"><img src="img19.jpg" alt="Gallery Image"></div>
+            <div class="gallery-item" onclick="openFullscreen('img20.jpg')"><img src="img20.jpg" alt="Gallery Image"></div>
+        </div>
+    </section>
+
+    <!-- Fullscreen Modal -->
+    <div id="fullscreen-modal" class="modal">
+        <span class="close" onclick="closeFullscreen()">&times;</span>
+        <img class="modal-content" id="fullscreen-img">
+    </div>
+
+    <script>
+        function openFullscreen(imageSrc) {
+            document.getElementById("fullscreen-modal").style.display = "block";
+            document.getElementById("fullscreen-img").src = imageSrc;
+        }
+
+        function closeFullscreen() {
+            document.getElementById("fullscreen-modal").style.display = "none";
+        }
+    </script>
+
+</body>
+</html>
+
+
