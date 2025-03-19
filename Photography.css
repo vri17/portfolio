@@ -43,7 +43,7 @@ body {
 /* Individual Image Boxes */
 .gallery-item {
     width: 100%;
-    height: auto;
+    height: repeat(auto-fit, minmax(150px, 1fr));
     border-radius: 10px;
     transition: transform 0.3s ease;
     cursor: pointer;
