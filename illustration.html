@@ -27,84 +27,49 @@
 <head>
    
     
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #0d0d0d;
-            text-align: center;
-            padding: 20px;
-            color: #00ff00;
-        }
-        .container {
-            display: flex;
-            justify-content: center;
-            gap: 20px;
-            flex-wrap: wrap;
-        }
-        .project {
-            background: #1a1a1a;
-            border: 2px solid #00ff00;
-            border-radius: 10px;
-            overflow: hidden;
-            box-shadow: 0 4px 8px rgba(0, 255, 0, 0.3);
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
-            cursor: pointer;
-            width: 400px;
-            height: 180px;
-            display: flex;
-            align-items: center;
-            justify-content: flex-start;
-            position: relative;
-        }
-        .project:hover {
-            transform: scale(1.05);
-            box-shadow: 0 6px 12px rgba(0, 255, 0, 0.5);
-        }
-        .project img {
-            width: 150px;
-            height: 100%;
-            object-fit: cover;
-            border-right: 2px solid #00ff00;
-        }
-        .project-info {
-            padding: 15px;
-            text-align: left;
-            flex-grow: 1;
-        }
-        h2 {
-            margin-bottom: 20px;
-        }
-    </style>
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
     
-</head>
-<body>
-    <h2>My Best Works</h2>
-    <div class="container">
-        <div class="project" onclick="window.open('ppt Inheritance cycle beh.pdf', '_blank')">
-            <img src="/images /pp11.jpeg" alt="Book Cover Design">
-            <div class="project-info">
-                <h3>Book Cover Design</h3>
-                <p>The essence of The Inheritance Cycle trilogy</p>
+        <section class="diet-selection">
+          
+            <div class="carousel-container">
+                <button class="prev-btn">&#8592;</button>
+                <div class="carousel">
+                    <div class="card">
+                        <div class="image-placeholder"></div>
+                        <div class="card-info">
+                            <h3>Снижение веса</h3>
+                            <p>1200 ккал/день</p>
+                            <a href="weight-loss.pdf" target="_blank" class="arrow-btn">&#8594;</a>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="image-placeholder"></div>
+                        <div class="card-info">
+                            <h3>Набор массы</h3>
+                            <p>2200 ккал/день</p>
+                            <a href="mass-gain.pdf" target="_blank" class="arrow-btn">&#8594;</a>
+                        </div>
+                    </div>
+                    <div class="card">
+                        
+                        </div>
+                    </div>
+                </div>
+                <button class="next-btn">&#8594;</button>
             </div>
-        </div>
-        <div class="project" onclick="window.open('Riyaasat.pdf', '_blank')">
-            <img src="o.3.jpg" alt="Brand Guidelines">
-            <div class="project-info">
-                <h3>Brand Guidelines</h3>
-                <p>RIYAASAT - Restoring Heritage, Sustaining Ecosystems</p>
+            <div class="pagination">
+                <span class="dot active"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
             </div>
-        </div>
-        <div class="project" onclick="window.open('GameJam.pdf', '_blank')">
-            <img src="card.1.jpg" alt="Game Design">
-            <div class="project-info">
-                <h3>Game Design</h3>
-                <p>Fizz-OFF - Save the Bubble from Getting Trapped!</p>
-            </div>
-        </div>
-    </div>
-</body>
-</html>
-
+        </section>
 
 
 </script>
@@ -119,11 +84,11 @@
             <p>Email: <a href="mailto:your@email.com">vridhi17sri@gmail.com</a></p>
         </div>
         <nav class="footer-nav">
-            <a href="#Home">Home</a>
-            <a href="#About">About</a>
-            <a href="#services">Services</a>
+            <a href="index.html">Home</a>
+            <a href="index.html">About</a>
+            <a href="index.html">Services</a>
             <a href="Photography.html">Photography</a>
-            <a href="#contact">Contact</a>
+            <a href="index.html">Contact</a>
         </nav>
         <div class="footer-subscribe">
             <p>Stay up to date</p>
