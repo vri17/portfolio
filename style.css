@@ -494,14 +494,7 @@ header {
     height: 20px;
 }
 
-/* General Styles */
-body {
-    font-family: Arial, sans-serif;
-    background: #E5E5E5;
-    text-align: center;
-    margin: 0;
-    padding: 20px;
-}
+
 
 /* Section Styling */
 .diet-selection {
@@ -516,7 +509,7 @@ h2 {
 
 /* Carousel Container */
 .carousel-container {
-    display: flex;
+    display: center;
     align-items: center;
     justify-content: center;
     position: relative;
